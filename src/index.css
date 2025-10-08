@@ -1,2 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+
+  --color-dark-purple: #632ee3;
+  --color-light-purple: #9f62f2;
+}
+
+ul li a.active {
+  @apply text-transparent bg-gradient-to-br from-dark-purple to-light-purple bg-clip-text border-b-2 border-light-purple rounded-b-none;
+}
