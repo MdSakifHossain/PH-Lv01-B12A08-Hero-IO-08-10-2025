@@ -10,3 +10,4 @@
 - **💩 Tabler Icons**
 - **🫧 Sonner**
 - **🛰️ Axios**
+- **📊 Recharts**
