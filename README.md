@@ -9,3 +9,4 @@
 - **🌐 React Router**
 - **💩 Tabler Icons**
 - **🫧 Sonner**
+- **🛰️ Axios**
