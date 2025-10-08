@@ -7,7 +7,7 @@
 - **🎨 Tailwind CSS**
 - **🌸 DaisyUI**
 - **🌐 React Router**
-- **💩 Tabler Icons**
+- **💩 React Icons**
 - **🫧 Sonner**
 - **🛰️ Axios**
 - **📊 Recharts**

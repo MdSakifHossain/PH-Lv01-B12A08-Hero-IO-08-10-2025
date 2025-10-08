@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router";
-import { IconChecks, IconPoo } from "@tabler/icons-react";
 import { Toaster, toast } from "sonner";
+import { FaGithub } from "react-icons/fa";
 
 const App = () => {
   return (
@@ -9,15 +9,15 @@ const App = () => {
       <Toaster position="top-right" />
       <div>
         <h1 className="text-6xl">App.jsx</h1>
-        <IconPoo stroke={2} className="size-16" />
+        <FaGithub className="size-9" />
+        <FaGithub />
         <Outlet />
         <button
           className="btn btn-outline btn-success"
           onClick={() => {
             toast(() => (
               <div className="font-poppins flex items-center justify-between gap-4">
-                <IconChecks className="size-10 text-rose-500" />
-                <h1 className="text-base">It works bro.</h1>
+                ✅ <h1 className="text-base">It works bro.</h1>
               </div>
             ));
           }}
