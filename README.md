@@ -8,3 +8,4 @@
 - **🌸 DaisyUI**
 - **🌐 React Router**
 - **💩 Tabler Icons**
+- **🫧 Sonner**
