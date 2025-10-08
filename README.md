@@ -6,3 +6,4 @@
 - **⚛️ React**
 - **🎨 Tailwind CSS**
 - **🌸 DaisyUI**
+- **🌐 React Router**
