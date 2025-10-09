@@ -3,24 +3,25 @@ import { SITE_DATA } from "../constants";
 
 const Hero = () => {
   return (
-    <section className="p-20 pb-0 flex flex-col items-center gap-10">
+    <section className="p-10 md:p-20 pb-0  flex flex-col items-center gap-10">
       <div className="flex flex-col items-center gap-10">
         <div className="text-center flex flex-col items-center gap-4">
-          <h1 className="font-bold text-7xl leading-[5.25rem] text-heading-color">
+          <h1 className="font-bold text-6xl leading-16 md:text-7xl md:leading-[5.25rem] text-heading-color">
             We Build <br />
             <span className="font-black bg-gradient-to-br from-dark-purple to-light-purple text-transparent bg-clip-text">
               Productive
             </span>{" "}
             Apps
           </h1>
-          <p className="text-subheading-color text-xl leading-8">
+          <p className="text-subheading-color text-lg md:text-xl leading-7 md:leading-8">
             At HERO.IO, we craft innovative apps designed to make everyday life
             simpler, smarter, and more exciting. <br />
             Our goal is to turn your ideas into digital experiences that truly
             make an impact.
           </p>
         </div>
-        <div className="flex items-center gap-4">
+
+        <div className="flex items-center gap-4 flex-col sm:flex-row">
           <a
             href={SITE_DATA.play_store_link}
             target="_blank"
