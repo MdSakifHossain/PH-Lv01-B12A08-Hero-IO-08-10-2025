@@ -7,7 +7,7 @@ const HomePage = () => {
     <div className="w-full flex-1">
       {/* <h1 className="text-4xl">Homepage.jsx</h1> */}
       <Hero />
-      <Banner></Banner>
+      <Banner />
     </div>
   );
 };
