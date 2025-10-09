@@ -23,8 +23,14 @@
 
   --color-my-accent2: #ff8811;
   --color-my-accent-bg2: #fff0e1;
+
+  --color-footer-bg: #001931;
 }
 
 ul li a.active {
   @apply text-transparent bg-gradient-to-br from-dark-purple to-light-purple bg-clip-text border-b-2 border-light-purple rounded-b-none;
+}
+
+.word-spacing {
+  word-spacing: 0.6rem;
 }

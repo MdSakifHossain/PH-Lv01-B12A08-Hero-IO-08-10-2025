@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router";
 import { Toaster } from "sonner";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <main className="flex-1 w-full flex flex-col items-start">
           <Outlet />
         </main>
+        <Footer />
       </div>
     </>
   );
