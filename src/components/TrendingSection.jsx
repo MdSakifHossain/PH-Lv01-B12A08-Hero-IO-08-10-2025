@@ -4,7 +4,6 @@ import AppCard from "./AppCard";
 
 const TrendingSection = ({ mockData }) => {
   const trendingApps = mockData.slice(24, 32);
-  console.log(trendingApps);
 
   return (
     <section className="p-10 md:p-20 flex flex-col gap-10 items-center">
