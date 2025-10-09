@@ -7,7 +7,7 @@ const AppCard = ({ app }) => {
     <div key={app.id} className="bg-white p-4 rounded flex flex-col gap-4">
       <img src={app.image} alt={app.title} className="rounded-lg" />
       <h4 className="font-medium line-clamp-1 text-ellipsis">{app.title}</h4>
-      <div className="flex items-center justify-between">
+      <div className="font-medium flex items-center justify-between">
         <span className="text-base text-my-accent bg-my-accent-bg px-2.5 py-1.5 rounded flex items-center gap-1">
           <LuDownload className="size-4" />
           {app.downloads}
