@@ -7,21 +7,21 @@ const Banner = () => {
         Trusted by Millions, Built for You
       </h2>
       <div className="w-full flex items-center justify-center gap-6 flex-col lg:flex-row">
-        <div className="border w-full md:w-auto md:px-[4.375rem] flex flex-col gap-4 items-center">
+        <div className="w-full md:w-auto md:px-[4.375rem] flex flex-col gap-4 items-center">
           <p className="text-base leading-6 text-white/80">Total Downloads</p>
           <h3 className="font-black text-4xl md:text-[4rem]">29.6M</h3>
           <p className="text-base leading-6 text-white/80">
             21% more than last month
           </p>
         </div>
-        <div className="border w-full md:w-auto md:px-[4.375rem] flex flex-col gap-4 items-center">
+        <div className="w-full md:w-auto md:px-[4.375rem] flex flex-col gap-4 items-center">
           <p className="text-base leading-6 text-white/80">Total Reviews</p>
           <h3 className="font-black text-4xl md:text-[4rem]">906K</h3>
           <p className="text-base leading-6 text-white/80">
             46% more than last month
           </p>
         </div>
-        <div className="border w-full md:w-auto md:px-[4.375rem] flex flex-col gap-4 items-center">
+        <div className="w-full md:w-auto md:px-[4.375rem] flex flex-col gap-4 items-center">
           <p className="text-base leading-6 text-white/80">Active Apps</p>
           <h3 className="font-black text-4xl md:text-[4rem]">132+</h3>
           <p className="text-base leading-6 text-white/80">
