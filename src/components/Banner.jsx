@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <section className="p-10 md:p-20 text-white flex flex-col gap-10 bg-gradient-to-br from-dark-purple to-light-purple">
-      <h2 className="font-bold text-2xl md:text-5xl text-center">
+      <h2 className="font-bold text-3xl md:text-5xl text-center">
         Trusted by Millions, Built for You
       </h2>
       <div className="w-full flex items-center justify-center gap-6 flex-col lg:flex-row">

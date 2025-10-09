@@ -6,12 +6,23 @@
 @theme {
   --font-inter: "Inter", sans-serif;
 
-  --color-dark-purple: #632ee3;
-  --color-light-purple: #9f62f2;
+  /* this color is used for hero sections buttons border color */
+  --color-border-color: #d2d2d2;
+
+  /* this color is usef for overall websites bg colr */
+  --color-bg: #f5f5f5;
 
   --color-heading-color: #001931;
   --color-subheading-color: #627382;
-  --color-border-color: #d2d2d2;
+
+  --color-dark-purple: #632ee3;
+  --color-light-purple: #9f62f2;
+
+  --color-my-accent: #00d390;
+  --color-my-accent-bg: #f1f5e8;
+
+  --color-my-accent2: #ff8811;
+  --color-my-accent-bg2: #fff0e1;
 }
 
 ul li a.active {

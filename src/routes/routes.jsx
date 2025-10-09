@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router";
+import axios from "axios";
 
 import App from "../App";
 import HomePage from "../pages/HomePage/HomePage";
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
+        loader: async () => axios("/apps.json"),
         Component: HomePage,
       },
     ],
