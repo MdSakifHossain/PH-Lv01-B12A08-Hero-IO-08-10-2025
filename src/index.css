@@ -8,6 +8,10 @@
 
   --color-dark-purple: #632ee3;
   --color-light-purple: #9f62f2;
+
+  --color-heading-color: #001931;
+  --color-subheading-color: #627382;
+  --color-border-color: #d2d2d2;
 }
 
 ul li a.active {

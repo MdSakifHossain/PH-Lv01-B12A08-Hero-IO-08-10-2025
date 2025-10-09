@@ -1,11 +1,10 @@
 import React from "react";
-import { navlinks } from "../utils/navlinks";
 import { Link, NavLink } from "react-router";
 import { FaGithub } from "react-icons/fa";
-import { data } from "../utils/some-info";
+import { SITE_DATA } from "../constants";
 
 const Header = () => {
-  const linksElement = navlinks.map((lnk) => (
+  const linksElement = SITE_DATA.navlinks.map((lnk) => (
     <li key={lnk.id}>
       <NavLink to={lnk.href}>{lnk.text}</NavLink>
     </li>
@@ -56,7 +55,7 @@ const Header = () => {
       <div className="navbar-end">
         <a
           target="_blank"
-          href={data.githubAddress}
+          href={SITE_DATA.githubAddress}
           className="btn bg-gradient-to-br from-dark-purple to-light-purple text-white px-4 py-3 font-semibold text-base border-0 flex items-center justify-center gap-2.5"
         >
           <FaGithub className="size-5" />
