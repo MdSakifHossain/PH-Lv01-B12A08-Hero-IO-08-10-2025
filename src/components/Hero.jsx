@@ -3,7 +3,7 @@ import { SITE_DATA } from "../constants";
 
 const Hero = () => {
   return (
-    <section className="p-10 md:p-20 pb-0  flex flex-col items-center gap-10">
+    <section className="p-10 pb-0 md:p-20 md:pb-0  flex flex-col items-center gap-10">
       <div className="flex flex-col items-center gap-10">
         <div className="text-center flex flex-col items-center gap-4">
           <h1 className="font-bold text-6xl leading-16 md:text-7xl md:leading-[5.25rem] text-heading-color">
