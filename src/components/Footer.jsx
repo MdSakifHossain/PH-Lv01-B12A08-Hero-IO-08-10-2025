@@ -4,7 +4,7 @@ import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className="bg-black text-white w-full">
-      <section className="bg-neutral-50 text-black p-10 rounded-b-4xl grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 *:min-h-60">
+      <section className="bg-neutral-50 text-black p-5 md:p-10 rounded-b-4xl grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 *:min-h-60">
         <div className="order-1 rounded-3xl px-8 py-6 text-2xl md:text-3xl font-medium leading-12 flex flex-col items-start justify-between gap-14 bg-neutral-300 transition-all duration-150 ease-in hover:bg-my-accent hover:text-white">
           <p>Let's start a Project.</p>
           <BsArrowUpRight className="stroke-[0.5]" />
