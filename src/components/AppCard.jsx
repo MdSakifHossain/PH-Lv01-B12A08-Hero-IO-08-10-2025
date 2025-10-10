@@ -4,7 +4,10 @@ import { FaStar } from "react-icons/fa";
 
 const AppCard = ({ app }) => {
   return (
-    <div key={app.id} className="bg-white p-4 rounded flex flex-col gap-4">
+    <div
+      key={app.id}
+      className="bg-white p-4 rounded flex flex-col gap-4 transition-all duration-150 ease-out hover:-translate-y-4 hover:shadow-lg hover:bg-neutral-100"
+    >
       <img src={app.image} alt={app.title} className="rounded-lg" />
       <h4 className="font-medium line-clamp-1 text-ellipsis">{app.title}</h4>
       <div className="font-medium flex items-center justify-between">
