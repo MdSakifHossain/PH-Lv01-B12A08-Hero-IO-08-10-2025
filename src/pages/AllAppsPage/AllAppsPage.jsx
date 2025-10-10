@@ -4,6 +4,7 @@ import { FiSearch } from "react-icons/fi";
 
 import AppCard from "../../components/AppCard";
 import LoadingSpinner from "../../components/LoadingSpinner";
+import AppNotFound from "../../components/AppNotFound";
 
 const AllAppsPage = () => {
   const { data } = useLoaderData();
@@ -68,7 +69,7 @@ const AllAppsPage = () => {
               ))}
             </div>
           ) : (
-            <div className="border">app not found</div>
+            <AppNotFound />
           )}
         </div>
       </div>
