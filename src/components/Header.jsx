@@ -56,7 +56,7 @@ const Header = () => {
         <a
           target="_blank"
           href={SITE_DATA.githubAddress}
-          className="btn bg-gradient-to-br from-dark-purple to-light-purple text-white px-4 py-3 font-semibold text-base border-0 flex items-center justify-center gap-2.5"
+          className="btn hidden xs:flex bg-gradient-to-br from-dark-purple to-light-purple text-white px-4 py-3 font-semibold text-base border-0 items-center justify-center gap-2.5"
         >
           <FaGithub className="size-5" />
           <span>Contribute</span>

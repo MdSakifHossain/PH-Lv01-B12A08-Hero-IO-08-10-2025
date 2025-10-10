@@ -4,6 +4,7 @@
 @plugin "daisyui";
 
 @theme {
+  --breakpoint-xs: 20rem;
   --font-inter: "Inter", sans-serif;
 
   /* this color is used for hero sections buttons border color */
