@@ -1,11 +1,13 @@
 import React from "react";
 import { LuDownload } from "react-icons/lu";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 const AppCard = ({ app }) => {
   return (
-    <div
+    <Link
       key={app.id}
+      to={`/apps/${app.id}`}
       className="bg-white p-4 rounded flex flex-col gap-4 transition-all duration-150 ease-out hover:-translate-y-4 hover:shadow-lg hover:bg-neutral-100"
     >
       <img src={app.image} alt={app.title} className="rounded-lg" />
@@ -20,7 +22,7 @@ const AppCard = ({ app }) => {
           {app.ratingAvg}
         </span>
       </div>
-    </div>
+    </Link>
   );
 };
 
