@@ -3,6 +3,7 @@ import axios from "axios";
 
 import App from "../App";
 import HomePage from "../pages/HomePage/HomePage";
+import AllAppsPage from "../pages/AllAppsPage/AllAppsPage";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 
 export const router = createBrowserRouter([
@@ -14,6 +15,11 @@ export const router = createBrowserRouter([
         index: true,
         loader: async () => axios("/apps.json"),
         Component: HomePage,
+      },
+      {
+        path: "/apps",
+        loader: async () => axios("/apps.json"),
+        Component: AllAppsPage,
       },
     ],
   },

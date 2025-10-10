@@ -47,3 +47,16 @@ ul li a.active {
 .animate-spinny {
   animation: spinny 0.6s linear infinite;
 }
+
+/* Custom CSS for global scrollbar hiding */
+/* For Firefox */
+html,
+body {
+  scrollbar-width: none;
+}
+
+/* For Chrome, Safari, Edge */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
