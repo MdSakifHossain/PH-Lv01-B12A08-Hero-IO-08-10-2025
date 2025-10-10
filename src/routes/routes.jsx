@@ -6,6 +6,7 @@ import HomePage from "../pages/HomePage/HomePage";
 import AllAppsPage from "../pages/AllAppsPage/AllAppsPage";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import AppDetailsPage from "../pages/AppDetailsPage/AppDetailsPage";
+import InstallationPage from "../pages/InstallationPage/InstallationPage";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,11 @@ export const router = createBrowserRouter([
           return allApps.find((app) => app.id === parseInt(params.id));
         },
         Component: AppDetailsPage,
+      },
+      {
+        path: "/installation",
+        loader: async () => axios("/apps.json"),
+        Component: InstallationPage,
       },
     ],
   },
