@@ -7,11 +7,13 @@ import AllAppsPage from "../pages/AllAppsPage/AllAppsPage";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import AppDetailsPage from "../pages/AppDetailsPage/AppDetailsPage";
 import InstallationPage from "../pages/InstallationPage/InstallationPage";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: App,
+    hydrateFallbackElement: <LoadingSpinner />,
     children: [
       {
         index: true,
