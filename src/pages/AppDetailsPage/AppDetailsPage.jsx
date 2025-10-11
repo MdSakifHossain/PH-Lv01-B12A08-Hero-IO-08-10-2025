@@ -30,7 +30,7 @@ const AppDetailsPage = () => {
 
     setGlobalInstalledList((prev) => [...prev, appId]);
     toast.success(
-      <ToastElement message={`${app.title} has been Installed!`} />
+      <ToastElement message={`${app.title} has Installed Successfully!`} />
     );
   };
 
