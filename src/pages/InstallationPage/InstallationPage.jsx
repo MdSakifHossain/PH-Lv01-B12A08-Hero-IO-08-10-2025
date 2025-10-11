@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 
 import { InstalledContext } from "../../contexts/InstalledContext";
 import InstalledAppCard from "../../components/InstalledAppCard";
@@ -34,14 +34,29 @@ const InstallationPage = () => {
         </div>
 
         {/* cards constainer */}
-        <div className="flex flex-col gap-4">
-          {globalInstalledList.map((appId) => (
-            <InstalledAppCard
-              key={appId}
-              app={allApps.find((app) => app.id === appId)}
-            />
-          ))}
-        </div>
+
+        {globalInstalledList.length === 0 ? (
+          <div className="py-32 flex flex-col gap-10 items-center">
+            <h2 className="text-5xl font-semibold text-heading-color capitalize">
+              no app installed.
+            </h2>
+            <Link
+              to={"/apps"}
+              className="bg-gradient-to-br from-dark-purple to-light-purple text-white px-6 py-2 text-xl rounded"
+            >
+              Install App
+            </Link>
+          </div>
+        ) : (
+          <div className="flex flex-col gap-4">
+            {globalInstalledList.map((appId) => (
+              <InstalledAppCard
+                key={appId}
+                app={allApps.find((app) => app.id === appId)}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
