@@ -9,7 +9,7 @@ const PageNotFound = () => {
       <Header />
       <section className="p-10 md:p-20 flex-1 w-full flex flex-col items-center gap-4">
         <img
-          className="max-w-[31.25rem]"
+          className="lg:w-[31.25rem]"
           src="/images/error-404.png"
           alt="404"
         />
