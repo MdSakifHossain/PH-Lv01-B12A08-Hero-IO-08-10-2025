@@ -1,6 +1,7 @@
 import React from "react";
 
 import AppCard from "./AppCard";
+import { Link } from "react-router";
 
 const TrendingSection = ({ mockData }) => {
   const trendingApps = mockData.slice(24, 32);
@@ -22,9 +23,12 @@ const TrendingSection = ({ mockData }) => {
         ))}
       </div>
 
-      <button className="font-semibold text-white px-10 py-3.5 rounded bg-gradient-to-br from-dark-purple to-light-purple">
+      <Link
+        to={`/apps`}
+        className="font-semibold text-white px-10 py-3.5 rounded bg-gradient-to-br from-dark-purple to-light-purple"
+      >
         Show All
-      </button>
+      </Link>
     </section>
   );
 };
