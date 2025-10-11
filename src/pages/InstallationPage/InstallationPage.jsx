@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FiDownload } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
 import { useLoaderData } from "react-router";
 
+import { InstalledContext } from "../../contexts/InstalledContext";
+
 const InstallationPage = () => {
   const { data } = useLoaderData();
-
+  const [globalInstalledList, setGlobalInstalledList] =
+    useContext(InstalledContext);
   const app = data[23];
-  console.log(app);
+
+  console.log(globalInstalledList);
 
   return (
     <section className="w-full flex-1 p-20 flex flex-col gap-10">

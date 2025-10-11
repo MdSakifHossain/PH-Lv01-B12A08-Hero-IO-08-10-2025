@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData } from "react-router";
+import { toast } from "sonner";
 import {
   ComposedChart,
   Bar,
@@ -9,8 +10,29 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+import { InstalledContext } from "../../contexts/InstalledContext";
+import ToastElement from "../../components/ToastElement";
+
 const AppDetailsPage = () => {
   const app = useLoaderData();
+  const [globalInstalledList, setGlobalInstalledList] =
+    useContext(InstalledContext);
+  const isAppInstalled = globalInstalledList.includes(app.id);
+
+  const handleInstallButtonClick = (appId) => {
+    if (isAppInstalled) {
+      toast.warning(
+        <ToastElement message={`${app.title} is Already Installed.`} />
+      );
+      console.log("IT'S IN THE LIST");
+      return;
+    }
+
+    setGlobalInstalledList((prev) => [...prev, appId]);
+    toast.success(
+      <ToastElement message={`${app.title} has been Installed!`} />
+    );
+  };
 
   return (
     <section className="w-full flex-1 p-5 md:p-20 flex flex-col justify-center gap-10">
@@ -69,8 +91,12 @@ const AppDetailsPage = () => {
             </div>
           </div>
 
-          <button className="bg-my-accent px-5 py-3.5 mx-auto sm:mx-0 rounded font-semibold text-xl text-white">
-            Install Now ({app.size} MB)
+          <button
+            onClick={() => handleInstallButtonClick(app.id)}
+            disabled={isAppInstalled}
+            className="bg-my-accent px-5 py-3.5 mx-auto sm:mx-0 rounded font-semibold text-xl text-white transition-opacity duration-150 ease-out disabled:opacity-50 disabled:bg-gray-600 disabled:px-8"
+          >
+            {isAppInstalled ? "Installed" : `Install Now (${app.size} MB)`}
           </button>
         </div>
       </div>
