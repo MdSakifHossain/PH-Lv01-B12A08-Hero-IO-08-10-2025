@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Outlet, useNavigation } from "react-router";
 import { Toaster } from "sonner";
 
@@ -10,7 +10,25 @@ import { InstalledContext } from "./contexts/InstalledContext";
 
 const App = () => {
   const navigation = useNavigation();
-  const [globalInstalledList, setGlobalInstalledList] = useState([]);
+  const [globalInstalledList, setGlobalInstalledList] = useState(() => {
+    try {
+      const saved = localStorage.getItem("installedApps");
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(
+        "installedApps",
+        JSON.stringify(globalInstalledList)
+      );
+    } catch (e) {
+      console.error("Failed to save installed apps:", e);
+    }
+  }, [globalInstalledList]);
 
   return (
     <>
