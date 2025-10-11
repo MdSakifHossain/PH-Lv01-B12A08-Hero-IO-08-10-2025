@@ -25,10 +25,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/apps/:id",
-        loader: async ({ params }) => {
-          const { data: allApps } = await axios("/apps.json");
-          return allApps.find((app) => app.id === parseInt(params.id));
-        },
+        loader: async () => await axios("/apps.json"),
         Component: AppDetailsPage,
       },
       {

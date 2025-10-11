@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const AppNotFound = () => {
   return (
-    <div className="py-10 flex flex-col items-center justify-between gap-4">
+    <div className="py-10 mx-auto flex flex-col items-center justify-between gap-4">
       <img src="/images/App-Error.png" alt="App Not Found" />
       <div className="flex flex-col items-center gap-2">
         <h2 className="font-semibold text-5xl leading-16 tracking-tight text-heading-color">
